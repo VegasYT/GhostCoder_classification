@@ -2,3 +2,4 @@ venv/
 ai/
 frontend/node_modules/
 backend/index/Tesseract/
+!backend/ai
