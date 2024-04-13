@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Light.ttf") format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Regular.ttf") format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Bold.ttf") format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url("../font/Lato-Black.ttf") format('truetype');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'TTInterfaces';
+    src: url("../font/TTInterfaces-Regular.ttf") format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'TTInterfaces';
+    src: url("../font/TTInterfaces-Medium.ttf") format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'TTInterfaces';
+    src: url("../font/TTInterfaces-SemiBold.ttf") format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'TTInterfaces';
+    src: url("../font/TTInterfaces-Bold.ttf") format('truetype');
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+div, button, textarea, input {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.main {
+    max-width: 1500px;
+    margin: 0px auto;
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
