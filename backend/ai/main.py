@@ -40,6 +40,8 @@ def distribution(text: str):
             return row['name']
 
 def predict(text: str) -> int:
+    data = pd.read_csv('ai/dataset.csv')
+
     vectorizer_path = 'ai/vectorizer.pkl'
     model_path = 'ai/model.pth'
 
@@ -48,7 +50,7 @@ def predict(text: str) -> int:
 
     input_size = text_to_classify.shape[1]
     hidden_size = 128  # Размер скрытого слоя
-    num_classes = 11
+    num_classes = len(data['class'].unique())
     model = TextClassifier(input_size, hidden_size, num_classes)
     model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
     model.eval()

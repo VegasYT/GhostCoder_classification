@@ -58,6 +58,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'middlewares.CustomMid.AddCustomHeadersMiddleware',
 ]
 
 ROOT_URLCONF = 'klassificator.urls'

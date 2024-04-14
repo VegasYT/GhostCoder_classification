@@ -103,9 +103,28 @@
     background-color: #308FEB;
     color: white;
     transition: all .3s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #start-but:hover {
+    box-shadow: 0px 6px 20px 3px rgba(31, 100, 255, 0.3);
+}
+
+#start-but-2 {
+    width: 245px;
+    background-color: #308FEB;
+    color: white;
+    transition: all .3s ease-in-out;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 100%;
+    margin-top: 6px;
+}
+
+#start-but-2:hover {
     box-shadow: 0px 6px 20px 3px rgba(31, 100, 255, 0.3);
 }
 
@@ -236,6 +255,15 @@
 
 .text-title {
     margin-top: 12px;
+}
+
+.modal-img {
+    height: 200px;
+    cursor: pointer;
+}
+
+.modal-img.select {
+    border: 2px solid #308FEB;
 }
 
 @media screen and (max-width: 1110px) {

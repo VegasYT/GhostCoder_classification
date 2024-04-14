@@ -1,0 +1,143 @@
+.forms-container {
+    margin-top: 98px;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.div-forms-main {
+    background-image: url('../img/forms_back.png');
+    border-radius: 20px;
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+.div-forms {
+    display: flex;
+    justify-content: center;
+    /* width: 1100px; */
+    column-gap: 50px;
+}
+
+.div-form {
+    /* width: 180px; */
+    flex-shrink: 1;
+}
+
+.div-form-title {
+    margin-left: 58px;
+    margin-top: 46px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all .6s ease-in-out;
+}
+
+.form-title {
+    font-family: 'TTInterfaces', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37.2px;
+    color: #ffffff;
+    display: block;
+    height: 60px;
+}
+
+.form-title:not(:first-child) {
+    margin-top: 7px;
+}
+
+.div-forms-input {
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-form-input:not(:first-child) {
+    margin-top: 7px;
+}
+
+.form-input {
+    border: none;
+    border-radius: 10px;
+    width: 120px;
+    height: 60px;
+    background-color: #ffffff;
+    padding-left: 27px;
+    padding-right: 27px;
+    text-align: center;
+    font-family: 'TTInterfaces', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #000022;
+}
+
+.form-input.textarea {
+    resize: none;
+    height: 100px;
+    padding-top: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+}
+
+.form-input::placeholder {
+    font-family: 'TTInterfaces', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A6A6B2;
+}
+
+.div-form-but {
+    margin-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.form-but {
+    width: 166px;
+    height: 40px;
+    background-color: #292929;
+    font-family: 'TTInterfaces', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 840px) {
+    .div-forms {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .div-form-title {
+        margin-left: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 604px) {
+    .form-title {
+        font-size: 20px;
+        line-height: 24.8px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .div-forms-input {
+        margin-top: 20px;
+    }
+
+    .form-input {
+        width: 300px;
+    }
+}
